@@ -16,5 +16,17 @@ namespace WaifuuBanner
         {
             InitializeComponent();
         }
+
+        private void notifyIcon1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+            this.ShowInTaskbar = false;
+            this.Visible = false;
+            notifyIcon1.Visible = true;
+        }
     }
 }

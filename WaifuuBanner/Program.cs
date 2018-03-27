@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,7 +17,15 @@ namespace WaifuuBanner
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            NotifyIcon notifyIcon = new NotifyIcon();
+            notifyIcon.Icon = Properties.Resources.MainIcon;
+            notifyIcon.Click += (obj, e) =>
+            {
+                NotifyMenu notifyMenu = new NotifyMenu();
+                notifyMenu.Show();
+            };
+            notifyIcon.Visible = true;
+            Application.Run();
         }
     }
 }
