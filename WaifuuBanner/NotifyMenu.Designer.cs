@@ -31,6 +31,9 @@
             this.ExitBtn = new System.Windows.Forms.Button();
             this.CloseBtn = new System.Windows.Forms.Button();
             this.imgchngbtn = new System.Windows.Forms.Button();
+            this.opacityTrackBar = new System.Windows.Forms.TrackBar();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.opacityTrackBar)).BeginInit();
             this.SuspendLayout();
             // 
             // ExitBtn
@@ -65,12 +68,34 @@
             this.imgchngbtn.UseVisualStyleBackColor = true;
             this.imgchngbtn.Click += new System.EventHandler(this.imgchngbtn_Click);
             // 
+            // opacityTrackBar
+            // 
+            this.opacityTrackBar.Location = new System.Drawing.Point(12, 193);
+            this.opacityTrackBar.Maximum = 100;
+            this.opacityTrackBar.Name = "opacityTrackBar";
+            this.opacityTrackBar.Size = new System.Drawing.Size(317, 56);
+            this.opacityTrackBar.TabIndex = 3;
+            this.opacityTrackBar.Value = 100;
+            this.opacityTrackBar.Scroll += new System.EventHandler(this.opacityTrackBar_Scroll);
+            this.opacityTrackBar.ValueChanged += new System.EventHandler(this.opacityTrackBar_ValueChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 163);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 15);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "투명도";
+            // 
             // NotifyMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.CloseBtn;
             this.ClientSize = new System.Drawing.Size(341, 290);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.opacityTrackBar);
             this.Controls.Add(this.imgchngbtn);
             this.Controls.Add(this.CloseBtn);
             this.Controls.Add(this.ExitBtn);
@@ -80,7 +105,9 @@
             this.Text = "NotifyMenu";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.NotifyMenu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.opacityTrackBar)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -89,5 +116,7 @@
         private System.Windows.Forms.Button ExitBtn;
         private System.Windows.Forms.Button CloseBtn;
         private System.Windows.Forms.Button imgchngbtn;
+        private System.Windows.Forms.TrackBar opacityTrackBar;
+        private System.Windows.Forms.Label label1;
     }
 }

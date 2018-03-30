@@ -8,19 +8,26 @@ namespace WaifuuBanner
 {
     static class ImageAdapter
     {
-        private static string currentimagepath;
+        private static string _currentimagepath;
         public static string CurrentImagePath
         {
-            get => currentimagepath;
+            get => _currentimagepath;
             set
             {
-                currentimagepath = value;
-                ActiveWaifuForm?.Dispose();
-                ActiveWaifuForm=new WaifuForm();
-                ActiveWaifuForm.Show();
+                _currentimagepath = value;
+                ActiveWaifuForm?.ChangePicture();
             }
         }
         public static WaifuForm ActiveWaifuForm;
-        public static int Opacity = 100;
+        private static int _opacity = 100;
+        public static int Opacity
+        {
+            get => _opacity;
+            set
+            {
+                _opacity = value;
+                ActiveWaifuForm?.ChangeOpacity();
+            }
+        }
     }
 }

@@ -42,5 +42,15 @@ namespace WaifuuBanner
                 ImageAdapter.CurrentImagePath=imgOpenFileDialog.FileName;
             }
         }
+
+        private void opacityTrackBar_Scroll(object sender, EventArgs e)
+        {
+            ImageAdapter.Opacity=((TrackBar) sender).Value;
+        }
+
+        private void opacityTrackBar_ValueChanged(object sender, EventArgs e)
+        {
+            ImageAdapter.Opacity = ((TrackBar)sender).Value;
+        }
     }
 }
