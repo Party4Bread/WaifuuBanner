@@ -25,6 +25,11 @@ namespace WaifuuBanner
                 notifyMenu.Show();
             };
             notifyIcon.Visible = true;
+            notifyIcon.ShowBalloonTip(4000,"알림 아이콘에 있어요!",
+                "하단 아이콘을 눌러서 설정할 수 있어요",ToolTipIcon.Info);
+            ImageAdapter.CurrentImagePath = "";
+            ImageAdapter.ActiveWaifuForm=new WaifuForm();
+            ImageAdapter.ActiveWaifuForm.Show();
             Application.Run();
         }
     }

@@ -33,5 +33,14 @@ namespace WaifuuBanner
         {
             this.Hide();
         }
+
+        private void imgchngbtn_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog imgOpenFileDialog = new OpenFileDialog();
+            if (imgOpenFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                ImageAdapter.CurrentImagePath=imgOpenFileDialog.FileName;
+            }
+        }
     }
 }

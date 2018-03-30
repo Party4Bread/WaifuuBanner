@@ -30,6 +30,7 @@
         {
             this.ExitBtn = new System.Windows.Forms.Button();
             this.CloseBtn = new System.Windows.Forms.Button();
+            this.imgchngbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ExitBtn
@@ -54,12 +55,23 @@
             this.CloseBtn.UseVisualStyleBackColor = true;
             this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
+            // imgchngbtn
+            // 
+            this.imgchngbtn.Location = new System.Drawing.Point(12, 12);
+            this.imgchngbtn.Name = "imgchngbtn";
+            this.imgchngbtn.Size = new System.Drawing.Size(317, 133);
+            this.imgchngbtn.TabIndex = 2;
+            this.imgchngbtn.Text = "이미지 변경";
+            this.imgchngbtn.UseVisualStyleBackColor = true;
+            this.imgchngbtn.Click += new System.EventHandler(this.imgchngbtn_Click);
+            // 
             // NotifyMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.CloseBtn;
             this.ClientSize = new System.Drawing.Size(341, 290);
+            this.Controls.Add(this.imgchngbtn);
             this.Controls.Add(this.CloseBtn);
             this.Controls.Add(this.ExitBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -76,5 +88,6 @@
 
         private System.Windows.Forms.Button ExitBtn;
         private System.Windows.Forms.Button CloseBtn;
+        private System.Windows.Forms.Button imgchngbtn;
     }
 }
