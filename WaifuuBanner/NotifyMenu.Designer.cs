@@ -33,7 +33,14 @@
             this.imgchngbtn = new System.Windows.Forms.Button();
             this.opacityTrackBar = new System.Windows.Forms.TrackBar();
             this.label1 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
+            this.label2 = new System.Windows.Forms.Label();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.opacityTrackBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.opacityTrackBar)).BeginInit();
+>>>>>>> 5e62cfe33182163c8f72ca74f531b9aaa935ce80
             this.SuspendLayout();
             // 
             // ExitBtn
@@ -62,7 +69,7 @@
             // 
             this.imgchngbtn.Location = new System.Drawing.Point(12, 12);
             this.imgchngbtn.Name = "imgchngbtn";
-            this.imgchngbtn.Size = new System.Drawing.Size(317, 133);
+            this.imgchngbtn.Size = new System.Drawing.Size(317, 83);
             this.imgchngbtn.TabIndex = 2;
             this.imgchngbtn.Text = "이미지 변경";
             this.imgchngbtn.UseVisualStyleBackColor = true;
@@ -82,18 +89,49 @@
             // label1
             // 
             this.label1.AutoSize = true;
+<<<<<<< HEAD
+            this.label1.Location = new System.Drawing.Point(12, 175);
+=======
             this.label1.Location = new System.Drawing.Point(13, 163);
+>>>>>>> 5e62cfe33182163c8f72ca74f531b9aaa935ce80
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 15);
             this.label1.TabIndex = 4;
             this.label1.Text = "투명도";
             // 
+<<<<<<< HEAD
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 98);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 15);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "크기";
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(12, 116);
+            this.trackBar1.Maximum = 200;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(317, 56);
+            this.trackBar1.TabIndex = 5;
+            this.trackBar1.Value = 100;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
+=======
+>>>>>>> 5e62cfe33182163c8f72ca74f531b9aaa935ce80
             // NotifyMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.CloseBtn;
             this.ClientSize = new System.Drawing.Size(341, 290);
+<<<<<<< HEAD
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.trackBar1);
+=======
+>>>>>>> 5e62cfe33182163c8f72ca74f531b9aaa935ce80
             this.Controls.Add(this.label1);
             this.Controls.Add(this.opacityTrackBar);
             this.Controls.Add(this.imgchngbtn);
@@ -106,6 +144,10 @@
             this.TopMost = true;
             this.Load += new System.EventHandler(this.NotifyMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.opacityTrackBar)).EndInit();
+<<<<<<< HEAD
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+=======
+>>>>>>> 5e62cfe33182163c8f72ca74f531b9aaa935ce80
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,5 +160,10 @@
         private System.Windows.Forms.Button imgchngbtn;
         private System.Windows.Forms.TrackBar opacityTrackBar;
         private System.Windows.Forms.Label label1;
+<<<<<<< HEAD
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TrackBar trackBar1;
+=======
+>>>>>>> 5e62cfe33182163c8f72ca74f531b9aaa935ce80
     }
 }

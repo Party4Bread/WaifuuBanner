@@ -35,6 +35,21 @@ namespace WaifuuBanner
         {
             this.Opacity = ImageAdapter.Opacity;
         }
+<<<<<<< HEAD
+
+        public void ChangeScale()
+        {
+            if (pictureBox1.Image != null)
+            {
+                this.Width = pictureBox1.Width = (int)(pictureBox1.Image.Width * ImageAdapter.Scale);
+                this.Height = pictureBox1.Height = (int)(pictureBox1.Image.Height * ImageAdapter.Scale);
+                var scrarea = Screen.PrimaryScreen.WorkingArea;
+                this.Left = scrarea.X + scrarea.Width - this.Width;
+            }
+        }
+
+=======
+>>>>>>> 5e62cfe33182163c8f72ca74f531b9aaa935ce80
         public void WaifuForm_Load(object sender, EventArgs e)
         {
             var scrarea = Screen.PrimaryScreen.WorkingArea;
