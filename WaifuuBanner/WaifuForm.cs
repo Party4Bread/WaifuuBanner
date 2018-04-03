@@ -35,7 +35,6 @@ namespace WaifuuBanner
         {
             this.Opacity = ImageAdapter.Opacity;
         }
-<<<<<<< HEAD
 
         public void ChangeScale()
         {
@@ -47,14 +46,13 @@ namespace WaifuuBanner
                 this.Left = scrarea.X + scrarea.Width - this.Width;
             }
         }
-
-=======
->>>>>>> 5e62cfe33182163c8f72ca74f531b9aaa935ce80
+        
         public void WaifuForm_Load(object sender, EventArgs e)
         {
             var scrarea = Screen.PrimaryScreen.WorkingArea;
             this.Top = 0;
             this.Left = scrarea.X + scrarea.Width - this.Width;
+
             this.BackColor = Color.Lime;
             //this.AllowTransparency = true;
             this.TransparencyKey = Color.Lime;

@@ -33,14 +33,10 @@
             this.imgchngbtn = new System.Windows.Forms.Button();
             this.opacityTrackBar = new System.Windows.Forms.TrackBar();
             this.label1 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
             this.label2 = new System.Windows.Forms.Label();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.opacityTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-=======
-            ((System.ComponentModel.ISupportInitialize)(this.opacityTrackBar)).BeginInit();
->>>>>>> 5e62cfe33182163c8f72ca74f531b9aaa935ce80
             this.SuspendLayout();
             // 
             // ExitBtn
@@ -84,22 +80,16 @@
             this.opacityTrackBar.TabIndex = 3;
             this.opacityTrackBar.Value = 100;
             this.opacityTrackBar.Scroll += new System.EventHandler(this.opacityTrackBar_Scroll);
-            this.opacityTrackBar.ValueChanged += new System.EventHandler(this.opacityTrackBar_ValueChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(12, 175);
-=======
-            this.label1.Location = new System.Drawing.Point(13, 163);
->>>>>>> 5e62cfe33182163c8f72ca74f531b9aaa935ce80
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 15);
             this.label1.TabIndex = 4;
             this.label1.Text = "투명도";
-            // 
-<<<<<<< HEAD
+            //
             // label2
             // 
             this.label2.AutoSize = true;
@@ -119,19 +109,14 @@
             this.trackBar1.Value = 100;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
-=======
->>>>>>> 5e62cfe33182163c8f72ca74f531b9aaa935ce80
             // NotifyMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.CloseBtn;
             this.ClientSize = new System.Drawing.Size(341, 290);
-<<<<<<< HEAD
             this.Controls.Add(this.label2);
             this.Controls.Add(this.trackBar1);
-=======
->>>>>>> 5e62cfe33182163c8f72ca74f531b9aaa935ce80
             this.Controls.Add(this.label1);
             this.Controls.Add(this.opacityTrackBar);
             this.Controls.Add(this.imgchngbtn);
@@ -144,10 +129,7 @@
             this.TopMost = true;
             this.Load += new System.EventHandler(this.NotifyMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.opacityTrackBar)).EndInit();
-<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-=======
->>>>>>> 5e62cfe33182163c8f72ca74f531b9aaa935ce80
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,10 +142,7 @@
         private System.Windows.Forms.Button imgchngbtn;
         private System.Windows.Forms.TrackBar opacityTrackBar;
         private System.Windows.Forms.Label label1;
-<<<<<<< HEAD
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TrackBar trackBar1;
-=======
->>>>>>> 5e62cfe33182163c8f72ca74f531b9aaa935ce80
     }
 }
